@@ -1,0 +1,21 @@
+@import "./abstracts/variables";
+
+body {
+    color: $color-white;
+}
+
+.bg-dark {
+    background: $color-dark;
+}
+
+.bg-black {
+    background: $color-black;
+}
+
+.text-primary {
+    color: $color-primary;
+}
+
+.text-secondary {
+    color: $color-secondary;
+}

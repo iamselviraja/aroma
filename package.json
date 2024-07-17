@@ -1,0 +1,17 @@
+{
+  "name": "aroma-app",
+  "version": "1.0.0",
+  "description": "A learning implementation of HTML, SCSS and JavaScript.",
+  "scripts": {
+    "start-live-server": "start live-server",
+    "transpile-sass": "sass --watch ./sass/main.scss:./styles.css --no-source-map",
+    "start": "npm run start-live-server && npm run transpile-sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.77.8"
+  }
+}

@@ -1,0 +1,19 @@
+body {
+  color: #f1f2f6;
+}
+
+.bg-dark {
+  background: #1b1815;
+}
+
+.bg-black {
+  background: #161312;
+}
+
+.text-primary {
+  color: #FF751F;
+}
+
+.text-secondary {
+  color: #883d0c;
+}
