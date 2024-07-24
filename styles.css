@@ -48,11 +48,11 @@
 @keyframes fadeInZoom {
   0% {
     opacity: 0;
-    transform: scale(1.5) rotate(180deg);
+    transform: scale(1.5);
   }
   100% {
     opacity: 1;
-    transform: scale(1) rotate(0);
+    transform: scale(1);
   }
 }
 @media (max-width: 576px) {
@@ -67,7 +67,6 @@
   }
   .btn-group {
     flex-direction: column;
-    width: 50%;
     min-width: 15rem;
   }
   .btn-group .btn {
@@ -91,16 +90,6 @@
   color: #FF751F;
 }
 
-@media (min-width: 576px) {
-  .sm-hide {
-    display: none;
-  }
-}
-
-.d-none {
-  display: none;
-}
-
 .text-primary {
   font-size: 5rem;
 }
@@ -111,6 +100,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  overflow: hidden; /* To comply with animations resulting in scrollbars */
 }
 
 html {
@@ -217,7 +207,7 @@ button, input, textarea {
 .header__nav--brand {
   display: flex;
   align-items: center;
-  animation: fadeInZoom 1s ease-in;
+  animation: fadeInZoom 1.5s ease-in;
 }
 .header__nav--brand img {
   width: 7.5rem;
@@ -252,6 +242,7 @@ button, input, textarea {
   text-align: center;
   padding: 0 5vw;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   align-items: center;
   transform: translateY(50%);
@@ -261,9 +252,9 @@ button, input, textarea {
   animation: moveInLeft 0.8s ease-in;
 }
 .header__hero--tagline {
+  margin-bottom: 2.5rem;
   animation: moveInRight 0.8s ease-in;
 }
 .header__hero--btn-group {
-  margin: 2.5rem 0;
   animation: moveInBottom 0.8s ease-in;
 }

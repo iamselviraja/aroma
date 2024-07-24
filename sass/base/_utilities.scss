@@ -17,14 +17,3 @@
 .color-primary {
     color: $color-primary;
 }
-
-// Display utilities
-.sm-hide {
-    @media (min-width: 576px) {
-        display: none;
-    }
-}
-
-.d-none {
-    display: none;
-}
