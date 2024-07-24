@@ -219,7 +219,7 @@ button, input, textarea {
   top: 0;
   left: 0;
   z-index: 99;
-  background-image: linear-gradient(to right, #FF751F, #883d0c);
+  background-image: linear-gradient(to right bottom, #FF751F, #883d0c);
   width: 100%;
   height: 100vh;
   display: flex;
