@@ -1,0 +1,30 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+// Text utilities
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// Text sizes
+.heading-primary {
+    font-size: 5rem;
+}
+
+// Color utilities
+.color-primary {
+    color: $color-primary;
+}
+
+// Display utilities
+.sm-hide {
+    @media (min-width: 576px) {
+        display: none;
+    }
+}
+
+.d-none {
+    display: none;
+}

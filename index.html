@@ -23,12 +23,80 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="bg-black">
-    <nav class="bg-dark text-secondary">
-        Navigation Element
-    </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#" class="header__nav--brand">
+                    <img src="./assets/aroma-logo.svg" alt="Aroma Logo" />
+                </a>
 
-    <header class="bg-dark text-primary">
-        Header Element 
+                <button class="toggle-btn">
+                    <span class="toggle-btn-bar toggle-btn-bar-1"></span>
+                    <span class="toggle-btn-bar toggle-btn-bar-2"></span>
+                    <span class="toggle-btn-bar toggle-btn-bar-3"></span>
+                </button>
+
+                <ul class="header__nav--menu">
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <button class="btn btn-light text-uppercase flex gap-min align-center">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+
+                            <span>
+                                Login
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End of Header__nav -->
+        </div>
+
+        <div class="header__hero">
+            <h1 class="header__hero--title color-primary heading-primary">
+                Feel the Real Taste
+            </h1>
+
+            <p class="header__hero--tagline">
+                Savor the Flavors of Authentic Cuisine in a Warm, Inviting Ambiance
+            </p>
+            
+            <article class="header__hero--btn-group btn-group">
+                <button class="btn btn-primary">
+                    Order Now
+                </button>
+
+                <button class="btn btn-secondary">
+                    View Menu
+                </button>
+            </article>
+        </div>
     </header>
+    <!-- End of Header -->
+
+    <script defer src="./script.js"></script>
 </body>
 </html>

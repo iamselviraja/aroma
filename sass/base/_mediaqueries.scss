@@ -1,0 +1,23 @@
+@media(max-width: 576px) {
+    .header__hero {
+        transform: translateY(40%) !important;
+    }
+
+    .header__hero--title {
+        line-height: 1.2;
+    }
+
+    .heading-primary {
+        font-size: 4rem !important;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        width: 50%;
+        min-width: 15rem;
+
+        & .btn {
+            align-self: stretch;
+        }
+    }
+}

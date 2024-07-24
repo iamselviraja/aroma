@@ -1,21 +1,11 @@
 @import "./abstracts/variables";
 
-body {
-    color: $color-white;
-}
+@import "./base/animations";
+@import "./base/mediaqueries";
+@import "./base/utilities";
+@import "./base/typography";
+@import "./base/base";
 
-.bg-dark {
-    background: $color-dark;
-}
+@import "./components/button";
 
-.bg-black {
-    background: $color-black;
-}
-
-.text-primary {
-    color: $color-primary;
-}
-
-.text-secondary {
-    color: $color-secondary;
-}
+@import "./layout/header";

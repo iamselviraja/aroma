@@ -1,0 +1,32 @@
+.btn {
+    padding: 1.25rem 2.5rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &-primary {
+        background: $color-primary;
+
+        &:hover {
+            background: lighten($color-primary, 4%);
+        }
+    }
+
+    &-secondary {
+        background: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            background: lighten($color-secondary, 4%);
+        }
+    }
+
+    &-light {
+        background: $color-light;
+
+        &:hover {
+            background: lighten($color-light, 4%);
+        }
+    }
+}
