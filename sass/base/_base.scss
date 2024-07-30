@@ -76,3 +76,11 @@ button, input, textarea {
     display: flex;
     gap: 2.5rem;
 }
+
+.section {
+    padding: calc(5rem + 5vw) 5vw;
+
+    &__title {
+        margin-bottom: 5rem;
+    }
+}
