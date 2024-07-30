@@ -55,6 +55,19 @@
     transform: scale(1);
   }
 }
+@keyframes dropBounceFromTop {
+  0% {
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(1rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 992px) {
   .about {
     flex-direction: column;
@@ -251,6 +264,7 @@ button, input, textarea {
 }
 .section__title {
   margin-bottom: 5rem;
+  animation: dropBounceFromTop 0.5s ease-in;
 }
 
 .btn {
@@ -362,6 +376,7 @@ button, input, textarea {
   box-shadow: 0 0 1.5rem rgba(87, 87, 87, 0.4);
   position: absolute;
   transition: all 0.3s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
 }
 .about__gallery--img:hover {
   filter: blur(0) !important;
@@ -383,6 +398,7 @@ button, input, textarea {
 }
 .about__content {
   width: calc(50% - 1.25rem);
+  animation: fadeIn 2s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 2rem;

@@ -21,6 +21,8 @@
 
             transition: all .3s ease-in-out;
 
+            animation: fadeIn 2s ease-in-out;
+
             &:hover {
                 filter: blur(0) !important;
                 outline: .5rem solid $color-secondary;
@@ -47,6 +49,8 @@
 
     &__content {
         width: calc(calc(100% / 2) - calc($col-gap / 2));
+
+        animation: fadeIn 2s ease-in-out;
 
         display: flex;
         flex-direction: column;
