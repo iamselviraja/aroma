@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+
+    &__card {
+        background-color: $color-dark;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        min-width: 22.5rem;
+        width: 30rem;
+
+        &--img {
+            width:100%;
+            padding: 1rem;
+        }
+
+        &--desc {
+            text-align: center;
+            color: $color-light;
+
+            &--title {
+                margin-bottom: 1rem;
+            }
+
+            &--list {
+                display: flex;
+                flex-direction: column;
+
+                & li:not(:last-child) {
+                    padding: 1rem 0;
+                    border-bottom: .1rem solid darken($color-grey, 35%);
+                }
+
+                & li:last-child {
+                        padding-top: 1rem !important;
+                }
+            }
+        }
+
+        &--button {
+            align-self: stretch;
+        }
+    }
+}
