@@ -291,11 +291,11 @@ button, input, textarea {
   background: #ff8233;
 }
 .btn-secondary {
-  background: #883d0c;
+  background: #7a370a;
   color: #f1f2f6;
 }
 .btn-secondary:hover {
-  background: #9b450e;
+  background: #8d400c;
 }
 .btn-light {
   background: #c9d1da;
@@ -330,7 +330,7 @@ button, input, textarea {
   top: 0;
   left: 0;
   z-index: 99;
-  background-image: linear-gradient(to right bottom, #FF751F, #883d0c);
+  background-image: linear-gradient(to right bottom, #FF751F, #7a370a);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -391,7 +391,7 @@ button, input, textarea {
 }
 .about__gallery--img:hover {
   filter: blur(0) !important;
-  outline: 0.5rem solid #883d0c;
+  outline: 0.5rem solid #7a370a;
   z-index: 2;
   border: 1.5rem solid rgba(87, 87, 87, 0.3);
   transform: scale(1.5) !important;
