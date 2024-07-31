@@ -270,6 +270,10 @@ button, input, textarea {
   gap: 2.5rem;
 }
 
+.main .section:nth-child(odd) {
+  background-color: #1b1815;
+}
+
 .section {
   padding: calc(5rem + 5vw) 5vw;
 }
