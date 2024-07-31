@@ -217,7 +217,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   background-color: #161312;
-  color: #f1f2f6;
+  color: #c9d1da;
 }
 
 ul {
@@ -443,7 +443,6 @@ button, input, textarea {
 }
 .menu__card--desc {
   text-align: center;
-  color: #c9d1da;
 }
 .menu__card--desc--title {
   margin-bottom: 1rem;
