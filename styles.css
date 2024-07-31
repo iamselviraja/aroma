@@ -431,6 +431,11 @@ button, input, textarea {
   gap: 2rem;
   min-width: 22.5rem;
   width: 30rem;
+  animation: moveInBottom 1.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menu__card:hover {
+  transform: translateY(-1.5rem);
 }
 .menu__card--img {
   width: 100%;
