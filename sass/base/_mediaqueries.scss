@@ -61,6 +61,29 @@
             }
         }
     }
+
+    .exclusives {
+        &__tabs {
+            & button span:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &__desc {
+            &--active-tab {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            &--tab {
+                &--img {
+                    min-width: 25rem;
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 576px) {
@@ -127,6 +150,16 @@
     .menu {
         &__card {
             width: 100% !important;
+        }
+    }
+
+    .exclusives {
+        &__desc {
+            &--tab {
+                &--img {
+                    width: 100% !important;
+                }
+            }
         }
     }
 }

@@ -21,3 +21,22 @@
 .color-primary {
     color: $color-primary;
 }
+
+// Link utilities
+.link {
+    &-primary {
+        color: $color-primary;
+
+        &:hover {
+            color: lighten($color-primary, 5%);
+        }
+    }
+
+    &-secondary {
+        color: $color-secondary;
+
+        &:hover {
+            color: lighten($color-secondary, 5%);
+        }
+    }
+}

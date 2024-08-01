@@ -109,6 +109,18 @@
   .about__gallery--img--1 {
     left: -1.5vw !important;
   }
+  .exclusives__tabs button span:nth-child(2) {
+    display: none;
+  }
+  .exclusives__desc--active-tab {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .exclusives__desc--tab--img {
+    min-width: 25rem;
+    width: 90%;
+  }
 }
 @media (max-width: 576px) {
   .header__hero {
@@ -160,6 +172,9 @@
   .menu__card {
     width: 100% !important;
   }
+  .exclusives__desc--tab--img {
+    width: 100% !important;
+  }
 }
 .container {
   max-width: 120rem;
@@ -180,6 +195,19 @@
 
 .color-primary {
   color: #FF751F;
+}
+
+.link-primary {
+  color: #FF751F;
+}
+.link-primary:hover {
+  color: #ff8539;
+}
+.link-secondary {
+  color: #7a370a;
+}
+.link-secondary:hover {
+  color: #92420c;
 }
 
 .heading-primary {
@@ -464,4 +492,62 @@ button, input, textarea {
 }
 .menu__card--button {
   align-self: stretch;
+}
+
+.exclusives__tabs {
+  display: flex;
+  justify-content: center;
+  gap: calc(1.5rem + 5vw);
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1.2s forwards;
+}
+.exclusives__tabs-tab {
+  border: 1px solid #7a370a;
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #c9d1da;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.exclusives__tabs-tab:hover {
+  cursor: pointer;
+  transform: scale(1.2) rotate(-10deg);
+}
+.exclusives__tabs--active {
+  background-color: #7a370a !important;
+  color: #f1f2f6 !important;
+  margin-bottom: -1rem;
+  align-self: flex-end;
+}
+.exclusives__desc {
+  padding: 5rem;
+  background: #161312 !important;
+  animation: moveInBottom 1.2s ease-in;
+}
+.exclusives__desc--tab {
+  display: none;
+}
+.exclusives__desc--tab--img {
+  width: 20rem;
+  min-width: 20rem;
+}
+.exclusives__desc--tab--content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.exclusives__desc--tab--content--link {
+  align-self: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+.exclusives__desc--tab--content--link:hover {
+  transform: translateX(1rem);
+}
+.exclusives__desc--active-tab {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
 }
