@@ -7,6 +7,9 @@ const navMenuEl = document.querySelector(".header__nav--menu");
 const exclusivesTabs = document.querySelectorAll(".exclusives__tabs-tab");
 const exclusivesTabsContents = document.querySelectorAll(".exclusives__desc--tab");
 
+const btnSlideNext = document.getElementById('btn-slide-next');
+const btnSlidePrev = document.getElementById('btn-slide-prev');
+
 /**
  * Function to toggle navigation menu
  */
@@ -53,3 +56,35 @@ exclusivesTabs.forEach(tab => tab.addEventListener("click", () => {
     // Switch tabs to extracted tab id
     switchTabs(activeTabId, activeTabContentId);
 }));
+
+/**
+ * Code to slide review items
+ */
+let currSlide = 0;
+const reviewSlides = document.querySelectorAll(".reviews__item");
+
+// Function to slide a review item
+const slide = () => {
+    reviewSlides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${(index - currSlide)*150}%)`;
+    });
+}
+
+// Function to handle sliding to the next review item
+const slideNext = () => {
+    if(currSlide == reviewSlides.length -1) currSlide = 0;
+    else currSlide++;
+
+    slide();
+}
+
+// Function to handle sliding to the previous review item
+const slidePrev = () => {
+    if(currSlide == 0) currSlide = reviewSlides.length -1;
+    else currSlide--;
+
+    slide();
+}
+
+btnSlidePrev.addEventListener("click", slidePrev);
+btnSlideNext.addEventListener("click", slideNext);
