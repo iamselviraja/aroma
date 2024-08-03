@@ -49,6 +49,16 @@
 
 
     }
+
+    .contact {
+        &__form {
+            padding-left: calc(1.5rem + 2.5vw) !important;
+
+            & > * {
+                width: 50% !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -81,6 +91,17 @@
                     min-width: 25rem;
                     width: 90%;
                 }
+            }
+        }
+    }
+
+    .contact {
+        &__form {
+            clip-path: none !important;
+            padding: 2.5rem;
+
+            & > * {
+                width: 100% !important;
             }
         }
     }

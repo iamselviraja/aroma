@@ -104,6 +104,12 @@
   .about__content {
     width: 100% !important;
   }
+  .contact__form {
+    padding-left: calc(1.5rem + 2.5vw) !important;
+  }
+  .contact__form > * {
+    width: 50% !important;
+  }
 }
 @media (max-width: 768px) {
   .about__gallery--img--1 {
@@ -120,6 +126,13 @@
   .exclusives__desc--tab--img {
     min-width: 25rem;
     width: 90%;
+  }
+  .contact__form {
+    clip-path: none !important;
+    padding: 2.5rem;
+  }
+  .contact__form > * {
+    width: 100% !important;
   }
 }
 @media (max-width: 576px) {
@@ -622,4 +635,33 @@ button, input, textarea {
 .reviews__item--person--avatar {
   width: 10rem;
   border-radius: 50%;
+}
+
+.contact {
+  background-image: url("../../assets/contact-bg-img.jpg");
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+}
+.contact__form {
+  background: rgba(27, 24, 21, 0.9);
+  padding-left: calc(2.5rem + 5vw);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+}
+.contact__form > * {
+  width: 40%;
+}
+.contact__form input, .contact__form textarea {
+  background: #1b1815;
+  padding: 1.5rem;
+  box-shadow: 0 0 1.5rem rgba(87, 87, 87, 0.4);
+  color: #f1f2f6;
+}
+.contact__form input {
+  width: 100%;
 }
