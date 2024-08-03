@@ -59,6 +59,12 @@
             }
         }
     }
+
+    .footer {
+        flex-direction: column !important;
+        gap: 5rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
