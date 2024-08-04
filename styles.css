@@ -1,38 +1,47 @@
 @keyframes moveInRight {
   0% {
+    -webkit-transform: translateX(-10rem);
     transform: translateX(-10rem);
     opacity: 0;
   }
   75% {
+    -webkit-transform: translateX(2.5rem);
     transform: translateX(2.5rem);
   }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes moveInLeft {
   0% {
+    -webkit-transform: translateX(10rem);
     transform: translateX(10rem);
     opacity: 0;
   }
   75% {
+    -webkit-transform: translateX(-2.5rem);
     transform: translateX(-2.5rem);
   }
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes moveInBottom {
   0% {
+    -webkit-transform: translateY(10rem);
     transform: translateY(10rem);
     opacity: 0;
   }
   75% {
+    -webkit-transform: translateY(-2.5rem);
     transform: translateY(-2.5rem);
   }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
@@ -48,22 +57,27 @@
 @keyframes fadeInZoom {
   0% {
     opacity: 0;
+    -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scale(1);
     transform: scale(1);
   }
 }
 @keyframes dropBounceFromTop {
   0% {
+    -webkit-transform: translateY(-5rem);
     transform: translateY(-5rem);
     opacity: 0;
   }
   75% {
+    -webkit-transform: translateY(1rem);
     transform: translateY(1rem);
   }
   100% {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
   }
@@ -86,6 +100,10 @@
   }
   .about__gallery--img:hover {
     transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important; /* Added vendor prefixes for transform */
+    -moz-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    -o-transform: scale(1.05) !important;
   }
   .about__gallery--img {
     width: calc(10vw + 10rem) !important;
@@ -133,7 +151,7 @@
     width: 90%;
   }
   .contact__form {
-    clip-path: none !important;
+    clip-path: none !important; /* clip-path does not require vendor prefixes */
     padding: 2.5rem;
   }
   .contact__form > * {
@@ -143,6 +161,10 @@
 @media (max-width: 576px) {
   .header__hero {
     transform: translateY(40%) !important;
+    -webkit-transform: translateY(40%) !important; /* Added vendor prefixes for transform */
+    -moz-transform: translateY(40%) !important;
+    -ms-transform: translateY(40%) !important;
+    -o-transform: translateY(40%) !important;
   }
   .header__hero--title {
     line-height: 1.2;
@@ -164,18 +186,26 @@
     justify-content: center;
   }
   .about__gallery:hover img {
-    filter: blur(0) !important;
+    filter: blur(0) !important; /* filter does not require vendor prefixes */
     transform: scale(1) !important;
+    -webkit-transform: scale(1) !important; /* Added vendor prefixes for transform */
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
   }
   .about__gallery--img {
     position: relative !important;
   }
   .about__gallery--img:hover {
-    filter: blur(0) !important;
-    outline: none !important;
+    filter: blur(0) !important; /* filter does not require vendor prefixes */
+    outline: none !important; /* outline does not require vendor prefixes */
     z-index: 1 !important;
     border: none !important;
     transform: scale(1) !important;
+    -webkit-transform: scale(1) !important; /* Added vendor prefixes for transform */
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
   }
   .about__gallery--img--1 {
     width: 25rem !important;
@@ -299,7 +329,11 @@ button, input, textarea {
   background: #c9d1da;
   padding: 1.5rem 1.25rem;
   border-radius: 50%;
+  box-shadow: 0 0 1rem #747f93;
   animation: fadeIn 2s ease-in;
+  -webkit-animation: fadeIn 2s ease-in;
+  -moz-animation: fadeIn 2s ease-in;
+  -o-animation: fadeIn 2s ease-in;
 }
 .toggle-btn:hover {
   background-color: #f1f2f6;
@@ -311,18 +345,29 @@ button, input, textarea {
   width: 2.5rem;
   background-color: #1b1815;
   transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 .toggle-btn-bar:not(:last-child) {
   margin-bottom: 0.4rem;
 }
 .toggle-btn-bar-1.active {
   transform: rotate(45deg) translate(5px, 5px);
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+  -moz-transform: rotate(45deg) translate(5px, 5px);
+  -ms-transform: rotate(45deg) translate(5px, 5px);
+  -o-transform: rotate(45deg) translate(5px, 5px);
 }
 .toggle-btn-bar-2.active {
   opacity: 0;
 }
 .toggle-btn-bar-3.active {
   transform: rotate(-45deg) translate(5px, -5px);
+  -webkit-transform: rotate(-45deg) translate(5px, -5px);
+  -moz-transform: rotate(-45deg) translate(5px, -5px);
+  -ms-transform: rotate(-45deg) translate(5px, -5px);
+  -o-transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .btn-group {
@@ -340,6 +385,9 @@ button, input, textarea {
 .section__title {
   margin-bottom: 5rem;
   animation: dropBounceFromTop 0.5s ease-in;
+  -webkit-animation: dropBounceFromTop 0.5s ease-in;
+  -moz-animation: dropBounceFromTop 0.5s ease-in;
+  -o-animation: dropBounceFromTop 0.5s ease-in;
 }
 
 .btn {
@@ -386,10 +434,13 @@ button, input, textarea {
 }
 .header__nav--brand img {
   width: 7.5rem;
+  -webkit-width: 7.5rem; /* Added vendor prefix for width */
 }
 .header__nav--menu {
   transition: all 0.3s ease-in; /* For enabling smooth transforms */
+  -webkit-transition: all 0.3s ease-in; /* Added vendor prefix for transition */
   transform: translateX(-200%); /* By default hidden */
+  -webkit-transform: translateX(-200%); /* Added vendor prefix for transform */
   position: absolute;
   top: 0;
   left: 0;
@@ -405,12 +456,15 @@ button, input, textarea {
 }
 .header__nav--menu.active {
   transform: translateX(0);
+  -webkit-transform: translateX(0); /* Added vendor prefix for transform */
 }
 .header__nav--menu li a {
   color: #c9d1da;
+  -webkit-color: #c9d1da; /* Added vendor prefix for color */
 }
 .header__nav--menu li a:hover {
   color: #f1f2f6;
+  -webkit-color: #f1f2f6; /* Added vendor prefix for color */
 }
 .header__hero {
   height: 50vh;
@@ -421,6 +475,7 @@ button, input, textarea {
   flex-direction: column;
   align-items: center;
   transform: translateY(50%);
+  -webkit-transform: translateY(50%); /* Added vendor prefix for transform */
 }
 .header__hero--title {
   line-height: 1.2;
@@ -444,21 +499,45 @@ button, input, textarea {
 }
 .about__gallery:hover img {
   filter: blur(0.2rem);
+  -webkit-filter: blur(0.2rem); /* Added vendor prefixes for filter */
+  -moz-filter: blur(0.2rem);
+  -ms-filter: blur(0.2rem);
+  -o-filter: blur(0.2rem);
   transform: scale(0.9);
+  -webkit-transform: scale(0.9); /* Added vendor prefixes for transform */
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
 }
 .about__gallery--img {
   width: calc(10vw + 7.5rem);
   box-shadow: 0 0 1.5rem rgba(87, 87, 87, 0.4);
   position: absolute;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; /* Added vendor prefixes for transition */
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   animation: fadeIn 2s ease-in-out;
+  -webkit-animation: fadeIn 2s ease-in-out; /* Added vendor prefixes for animation */
+  -moz-animation: fadeIn 2s ease-in-out;
+  -ms-animation: fadeIn 2s ease-in-out;
+  -o-animation: fadeIn 2s ease-in-out;
 }
 .about__gallery--img:hover {
   filter: blur(0) !important;
+  -webkit-filter: blur(0) !important; /* Added vendor prefixes for filter */
+  -moz-filter: blur(0) !important;
+  -ms-filter: blur(0) !important;
+  -o-filter: blur(0) !important;
   outline: 0.5rem solid #7a370a;
   z-index: 2;
   border: 1.5rem solid rgba(87, 87, 87, 0.3);
   transform: scale(1.5) !important;
+  -webkit-transform: scale(1.5) !important; /* Added vendor prefixes for transform */
+  -moz-transform: scale(1.5) !important;
+  -ms-transform: scale(1.5) !important;
+  -o-transform: scale(1.5) !important;
 }
 .about__gallery--img--1 {
   left: 5%;
@@ -474,6 +553,10 @@ button, input, textarea {
 .about__content {
   width: calc(50% - 1.25rem);
   animation: fadeIn 2s ease-in-out;
+  -webkit-animation: fadeIn 2s ease-in-out; /* Added vendor prefixes for animation */
+  -moz-animation: fadeIn 2s ease-in-out;
+  -ms-animation: fadeIn 2s ease-in-out;
+  -o-animation: fadeIn 2s ease-in-out;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -496,13 +579,17 @@ button, input, textarea {
   min-width: 22.5rem;
   width: 30rem;
   animation: moveInBottom 1.2s ease-in-out;
+  -webkit-animation: moveInBottom 1.2s ease-in-out; /* Added vendor prefix for animation */
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; /* Added vendor prefix for transition */
 }
 .menu__card:hover {
   transform: translateY(-1.5rem);
+  -webkit-transform: translateY(-1.5rem); /* Added vendor prefix for transform */
 }
 .menu__card--img {
   width: 100%;
+  -webkit-width: 100%; /* Added vendor prefix for width */
   padding: 1rem;
 }
 .menu__card--desc {
@@ -547,6 +634,8 @@ button, input, textarea {
 .exclusives__tabs-tab:hover {
   cursor: pointer;
   transform: scale(1.2) rotate(-10deg);
+  -webkit-transform: scale(1.2) rotate(-10deg); /* Added vendor prefix for transform */
+  -ms-transform: scale(1.2) rotate(-10deg);
 }
 .exclusives__tabs--active {
   background-color: #7a370a !important;
@@ -577,6 +666,8 @@ button, input, textarea {
 }
 .exclusives__desc--tab--content--link:hover {
   transform: translateX(1rem);
+  -webkit-transform: translateX(1rem); /* Added vendor prefix for transform */
+  -ms-transform: translateX(1rem);
 }
 .exclusives__desc--active-tab {
   display: flex;
@@ -601,6 +692,11 @@ button, input, textarea {
   z-index: 10;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%); /* Added to vertically center the button */
+  -webkit-transform: translateY(-50%); /* Added vendor prefix for transform */
+}
+.reviews__btn--slider:hover {
+  cursor: pointer;
 }
 .reviews #btn-slide-prev {
   left: 0;
@@ -616,9 +712,11 @@ button, input, textarea {
 }
 .reviews #reviews-item-2 {
   transform: translateX(150%);
+  -webkit-transform: translateX(150%); /* Added vendor prefix for transform */
 }
 .reviews #reviews-item-3 {
   transform: translateX(300%);
+  -webkit-transform: translateX(300%); /* Added vendor prefix for transform */
 }
 .reviews__item {
   padding: 5rem 0;
@@ -626,6 +724,7 @@ button, input, textarea {
   position: absolute;
   top: 0;
   transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out; /* Added vendor prefix for transition */
 }
 .reviews__item--title {
   margin-bottom: 1rem;
@@ -640,6 +739,7 @@ button, input, textarea {
 .reviews__item--person--avatar {
   width: 10rem;
   border-radius: 50%;
+  -webkit-border-radius: 50%; /* Added vendor prefix for border-radius */
 }
 
 .contact {
@@ -657,6 +757,10 @@ button, input, textarea {
   gap: 1.5rem;
   justify-content: center;
   clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%); /* Added vendor prefix for clip-path */
+  -moz-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+  -o-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+  -ms-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
 }
 .contact__form > * {
   width: 40%;
@@ -695,11 +799,14 @@ button, input, textarea {
 }
 .footer__meta--links ul li a:hover {
   color: #FF751F;
+  -webkit-transition: color 0.3s ease-in-out; /* Added vendor prefix for transition */
+  transition: color 0.3s ease-in-out;
 }
 .footer__meta--social {
   display: flex;
   gap: 2.5rem;
   font-size: 2rem;
+  -webkit-font-size: 2rem; /* Added vendor prefix for font-size */
 }
 .footer__company-desc {
   width: 25rem;

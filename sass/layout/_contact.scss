@@ -16,6 +16,10 @@
         justify-content: center;
 
         clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%); /* Added vendor prefix for clip-path */
+        -moz-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+        -o-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+        -ms-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
 
         & > * {
             width: 40%;

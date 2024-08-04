@@ -19,12 +19,14 @@
             display: flex;
             gap: 2.5rem;
 
-            & li  {
+            & li {
                 a {
                     color: $color-secondary;
 
                     &:hover {
                         color: $color-primary;
+                        -webkit-transition: color .3s ease-in-out; /* Added vendor prefix for transition */
+                        transition: color .3s ease-in-out;
                     }
                 }
             }
@@ -35,6 +37,7 @@
             gap: 2.5rem;
 
             font-size: 2rem;
+            -webkit-font-size: 2rem; /* Added vendor prefix for font-size */
         }
     }
 

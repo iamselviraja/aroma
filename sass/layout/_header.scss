@@ -8,7 +8,6 @@
     background-position: top;
     height: 100vh;
 
-    
     &__nav { 
         display: flex;
         justify-content: space-between;
@@ -22,17 +21,20 @@
 
             & img {
                 width: 7.5rem;
+                -webkit-width: 7.5rem; /* Added vendor prefix for width */
             }
         }
 
         &--menu {
             &.active {
                 transform: translateX(0);
+                -webkit-transform: translateX(0); /* Added vendor prefix for transform */
             }
-
             
             transition: all .3s ease-in; /* For enabling smooth transforms */
+            -webkit-transition: all .3s ease-in; /* Added vendor prefix for transition */
             transform: translateX(-200%); /* By default hidden */
+            -webkit-transform: translateX(-200%); /* Added vendor prefix for transform */
 
             position: absolute;
             top: 0;
@@ -49,14 +51,15 @@
             gap: 2.5rem;
             align-items: center;
             justify-content: center;
-            
 
             & li {
                 & a {
                     color: $color-light;
+                    -webkit-color: $color-light; /* Added vendor prefix for color */
 
                     &:hover {
                         color: $color-white;
+                        -webkit-color: $color-white; /* Added vendor prefix for color */
                     }
                 }
             }
@@ -73,6 +76,7 @@
         flex-direction: column;
         align-items: center;
         transform: translateY(50%);
+        -webkit-transform: translateY(50%); /* Added vendor prefix for transform */
 
         &--title {
             line-height: 1.2;

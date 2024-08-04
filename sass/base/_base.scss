@@ -1,93 +1,112 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: $default-font-size;
-    scroll-behavior: smooth;
+  font-size: $default-font-size;
+  scroll-behavior: smooth;
 }
 
 body {
-    box-sizing: border-box;
-    font-family: $font-normal;
-    font-size: $text-regular;
-    line-height: $default-line-height;
-    background-color: $color-black;
-    color: $color-light;
+  box-sizing: border-box;
+  font-family: $font-normal;
+  font-size: $text-regular;
+  line-height: $default-line-height;
+  background-color: $color-black;
+  color: $color-light;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button, input, textarea {
-    font-family: inherit;
-    border: none;
+  font-family: inherit;
+  border: none;
 }
 
 .toggle-btn {
-    position: relative; /* To get z-index property applied */
-    z-index: 999;
-    background: $color-light;
-    padding: 1.5rem 1.25rem;
-    border-radius: 50%;
+  position: relative; /* To get z-index property applied */
+  z-index: 999;
+  background: $color-light;
+  padding: 1.5rem 1.25rem;
+  border-radius: 50%;
 
-    animation: fadeIn 2s ease-in;
+  box-shadow: 0 0 1rem $color-grey;
 
-    &:hover {
-        background-color: $color-white;
-        cursor: pointer;
+  animation: fadeIn 2s ease-in;
+  -webkit-animation: fadeIn 2s ease-in;
+  -moz-animation: fadeIn 2s ease-in;
+  -o-animation: fadeIn 2s ease-in;
+
+  &:hover {
+    background-color: $color-white;
+    cursor: pointer;
+  }
+
+  &-bar {
+    display: block;
+    height: .3rem;
+    width: 2.5rem;
+    background-color: $color-dark;     
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    
+    &:not(:last-child) {
+      margin-bottom: .4rem;
     }
+  }
 
-    &-bar {
-        display: block;
-        height: .3rem;
-        width: 2.5rem;
-        background-color: $color-dark;     
-        transition: all .3s ease-in;
-        
-        &:not(:last-child) {
-            margin-bottom: .4rem;
-        }
-    }
+  &-bar-1.active {
+    transform: rotate(45deg) translate(5px, 5px);
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -moz-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+    -o-transform: rotate(45deg) translate(5px, 5px);
+  }
 
-    &-bar-1.active {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
+  &-bar-2.active {
+    opacity: 0;
+  }
 
-    &-bar-2.active {
-        opacity: 0;
-    }
-
-    &-bar-3.active {
-        transform: rotate(-45deg) translate(5px, -5px);
-    }
+  &-bar-3.active {
+    transform: rotate(-45deg) translate(5px, -5px);
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+    -moz-transform: rotate(-45deg) translate(5px, -5px);
+    -ms-transform: rotate(-45deg) translate(5px, -5px);
+    -o-transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
 
 .btn-group {
-    display: flex;
-    gap: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
 }
 
 .main {
-    & .section:nth-child(odd) {
-        background-color: $color-dark;
-    }
+  & .section:nth-child(odd) {
+    background-color: $color-dark;
+  }
 }
 
 .section {
-    padding: calc(5rem + 5vw) 5vw;
+  padding: calc(5rem + 5vw) 5vw;
 
-    &__title {
-        margin-bottom: 5rem;
-        animation: dropBounceFromTop 0.5s ease-in;
-    }
+  &__title {
+    margin-bottom: 5rem;
+    animation: dropBounceFromTop 0.5s ease-in;
+    -webkit-animation: dropBounceFromTop 0.5s ease-in;
+    -moz-animation: dropBounceFromTop 0.5s ease-in;
+    -o-animation: dropBounceFromTop 0.5s ease-in;
+  }
 }

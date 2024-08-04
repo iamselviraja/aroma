@@ -14,15 +14,19 @@
         width: 30rem;
 
         animation: moveInBottom 1.2s ease-in-out;
+        -webkit-animation: moveInBottom 1.2s ease-in-out; /* Added vendor prefix for animation */
 
         transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out; /* Added vendor prefix for transition */
 
         &:hover {
             transform: translateY(-1.5rem);
+            -webkit-transform: translateY(-1.5rem); /* Added vendor prefix for transform */
         }
 
         &--img {
-            width:100%;
+            width: 100%;
+            -webkit-width: 100%; /* Added vendor prefix for width */
             padding: 1rem;
         }
 
@@ -43,7 +47,7 @@
                 }
 
                 & li:last-child {
-                        padding-top: 1rem !important;
+                    padding-top: 1rem !important;
                 }
             }
         }

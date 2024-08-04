@@ -9,9 +9,16 @@
 
         &:hover img {
             filter: blur(.2rem);
+            -webkit-filter: blur(.2rem); /* Added vendor prefixes for filter */
+            -moz-filter: blur(.2rem);
+            -ms-filter: blur(.2rem);
+            -o-filter: blur(.2rem);
             transform: scale(0.9);
+            -webkit-transform: scale(0.9); /* Added vendor prefixes for transform */
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
         }
-
 
         &--img {
             width: calc(10vw + 7.5rem);
@@ -20,15 +27,31 @@
             position: absolute;
 
             transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out; /* Added vendor prefixes for transition */
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
 
             animation: fadeIn 2s ease-in-out;
+            -webkit-animation: fadeIn 2s ease-in-out; /* Added vendor prefixes for animation */
+            -moz-animation: fadeIn 2s ease-in-out;
+            -ms-animation: fadeIn 2s ease-in-out;
+            -o-animation: fadeIn 2s ease-in-out;
 
             &:hover {
                 filter: blur(0) !important;
+                -webkit-filter: blur(0) !important; /* Added vendor prefixes for filter */
+                -moz-filter: blur(0) !important;
+                -ms-filter: blur(0) !important;
+                -o-filter: blur(0) !important;
                 outline: .5rem solid $color-secondary;
                 z-index: 2;
                 border: 1.5rem solid rgba(87, 87, 87, 0.3);
                 transform: scale(1.5) !important;
+                -webkit-transform: scale(1.5) !important; /* Added vendor prefixes for transform */
+                -moz-transform: scale(1.5) !important;
+                -ms-transform: scale(1.5) !important;
+                -o-transform: scale(1.5) !important;
             }
 
             &--1 {
@@ -51,6 +74,10 @@
         width: calc(calc(100% / 2) - calc($col-gap / 2));
 
         animation: fadeIn 2s ease-in-out;
+        -webkit-animation: fadeIn 2s ease-in-out; /* Added vendor prefixes for animation */
+        -moz-animation: fadeIn 2s ease-in-out;
+        -ms-animation: fadeIn 2s ease-in-out;
+        -o-animation: fadeIn 2s ease-in-out;
 
         display: flex;
         flex-direction: column;

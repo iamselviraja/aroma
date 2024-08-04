@@ -23,6 +23,8 @@
             &:hover {
                 cursor: pointer;
                 transform: scale(1.2) rotate(-10deg);
+                -webkit-transform: scale(1.2) rotate(-10deg); /* Added vendor prefix for transform */
+                -ms-transform: scale(1.2) rotate(-10deg);
             }
         }
 
@@ -59,8 +61,10 @@
 
                     transition: all .3s ease-in-out;
 
-                    &:hover  {
+                    &:hover {
                         transform: translateX(1rem);
+                        -webkit-transform: translateX(1rem); /* Added vendor prefix for transform */
+                        -ms-transform: translateX(1rem);
                     }
                 }
             }

@@ -19,6 +19,12 @@
 
         position: absolute;
         top: 50%;
+        transform: translateY(-50%); /* Added to vertically center the button */
+        -webkit-transform: translateY(-50%); /* Added vendor prefix for transform */
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     #btn-slide-prev {
@@ -39,10 +45,12 @@
 
     #reviews-item-2 {
         transform: translateX(150%);
+        -webkit-transform: translateX(150%); /* Added vendor prefix for transform */
     }
 
     #reviews-item-3 {
         transform: translateX(300%);
+        -webkit-transform: translateX(300%); /* Added vendor prefix for transform */
     }
 
     &__item {
@@ -54,10 +62,10 @@
         top: 0;
 
         transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out; /* Added vendor prefix for transition */
 
         &--title {
             margin-bottom: 1rem;
-
         }
 
         &--desc {
@@ -71,6 +79,7 @@
             &--avatar {
                 width: 10rem;
                 border-radius: 50%;
+                -webkit-border-radius: 50%; /* Added vendor prefix for border-radius */
             }
         }
     }

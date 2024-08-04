@@ -1,47 +1,56 @@
 @keyframes moveInRight {
     0% {
-        transform: translateX(-10rem);
+        -webkit-transform: translateX(-10rem);
+                transform: translateX(-10rem);
         opacity: 0;
     }
 
     75% {
-        transform: translateX(2.5rem);
+        -webkit-transform: translateX(2.5rem);
+                transform: translateX(2.5rem);
     }
 
     100% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes moveInLeft {
     0% {
-        transform: translateX(10rem);
+        -webkit-transform: translateX(10rem);
+                transform: translateX(10rem);
         opacity: 0;
     }
 
     75% {
-        transform: translateX(-2.5rem);
+        -webkit-transform: translateX(-2.5rem);
+                transform: translateX(-2.5rem);
     }
 
     100% {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
         opacity: 1;
     }
 }
 
 @keyframes moveInBottom {
     0% {
-        transform: translateY(10rem);
+        -webkit-transform: translateY(10rem);
+                transform: translateY(10rem);
         opacity: 0;
     }
 
     75% {
-        transform: translateY(-2.5rem);
+        -webkit-transform: translateY(-2.5rem);
+                transform: translateY(-2.5rem);
     }
 
     100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         opacity: 1;
     }
 }
@@ -59,27 +68,32 @@
 @keyframes fadeInZoom {
     0% {
         opacity: 0;
-        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+                transform: scale(1.5);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
 @keyframes dropBounceFromTop {
     0% {
-        transform: translateY(-5rem);
+        -webkit-transform: translateY(-5rem);
+                transform: translateY(-5rem);
         opacity: 0;
     }
 
     75% {
-        transform: translateY(1rem);
+        -webkit-transform: translateY(1rem);
+                transform: translateY(1rem);
     }
 
     100% {
-        transform: translateY(0);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
         opacity: 1;
     }
 }
