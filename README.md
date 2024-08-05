@@ -3,11 +3,11 @@
 A Responsive, Cross-browser compatible and Optimally rendering website developed using the core Frontend Technologies i.e., HTML5, CSS3 and JavaScript. 
 
 ## Live Demo
-[Live Demo Link] - https://mr-selviraja.github.io/aroma/
+[Website Demo Link] - https://mr-selviraja.github.io/aroma/
 
 ## Technologies Used
-* HTML - for structuing the UI elements and for UI accessibility
-* CSS - for styling the layout and Incoporating responsiveness
+* HTML5 - for structuing the UI elements and for UI accessibility
+* CSS3 - for styling the layout and Incoporating responsiveness
 * JavaScript - for building interactive UI
 
 ## Potential Improvements
