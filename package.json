@@ -4,7 +4,7 @@
   "description": "A learning implementation of HTML, SCSS and JavaScript.",
   "scripts": {
     "start-live-server": "start live-server",
-    "transpile-sass": "sass --watch ./sass/main.scss:./styles.css",
+    "transpile-sass": "sass --watch ./sass/main.scss:./styles.css --no-source-map",
     "start": "npm run start-live-server && npm run transpile-sass"
   },
   "keywords": [],

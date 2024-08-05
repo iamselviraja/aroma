@@ -417,7 +417,7 @@ button, input, textarea {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(22, 19, 18, 0.85), rgba(27, 24, 21, 0.85)), url("../assets/hero-image.jpg");
+  background-image: linear-gradient(to right bottom, rgba(22, 19, 18, 0.85), rgba(27, 24, 21, 0.85)), url("https://i.ibb.co/4m3N9CZ/hero-image.jpg");
   background-size: cover;
   background-position: top;
   height: 100vh;
@@ -743,7 +743,7 @@ button, input, textarea {
 }
 
 .contact {
-  background-image: url("../../assets/contact-bg-img.jpg");
+  background-image: url("https://i.ibb.co/0KY52Ld/contact-bg-img.jpg");
   height: 70vh;
   background-position: center;
   background-size: cover;
